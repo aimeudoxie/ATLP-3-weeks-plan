@@ -422,30 +422,35 @@ line-height: 20px;
     padding: 6px 7px 3px 9px;
     margin: 5px 0;
     justify-content: flex-start;
+    
 }
 .frnd_message p{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     right: 0; 
     padding: 6px 7px 3px 9px;
     text-align: left;
     max-width: 65%;
     color: #111B21;
-    background: #dcf8c6;
+    background: white;
     font-family: Helvetica;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
     border-radius: 5px;
+    box-shadow: 0px 1.5px 0.5px 0px rgba(11, 20, 26, 0.13);
    
 }
 
-.frnd_message p ::before{
+.frnd_message::before{
     content: '';
+    position: relative;
+    top: 0px;
+    right: -2px;
     width: 15px;
     height: 10px;
-    background: linear-gradient(225deg,red 0%,red 50%,transparent 50%,transparent);
+    background: linear-gradient(225deg,white 0%,white 50%,transparent 50%,transparent);
 }
 .frnd_message p span{
     display: flex;
@@ -459,13 +464,12 @@ line-height: 20px;
     display:flex;
     width: 90%;
     padding: 6px 7px 3px 9px;
-    margin: 5px 0;
+    margin: 5px 0px;
     justify-content: flex-end;
 }
 .my_message p{
 display: flex;
-justify-content: space-between;
-right: 0; 
+justify-content: space-between; 
 padding: 6px 7px 3px 9px;
 text-align: right;
 max-width: 50%;
@@ -476,13 +480,17 @@ font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: 19px;
-border-radius: 5px;
+border-radius: 5px 0px 5px 5px;
+box-shadow: 0px 1.5px 0.5px 0px rgba(11, 20, 26, 0.13);
 }
-.my_message p::before{
+.my_message::after{
     content: '';
+    position: relative;
+    top: 0px;
+    left: -2px;
     width: 15px;
     height: 10px;
-    background: linear-gradient(135deg,red 0%,red 50%,transparent 50%,transparent);
+    background: linear-gradient(135deg,#dcf8c6 0%,#dcf8c6 50%,transparent 50%,transparent);
 }
 .my_message p span{
     display: flex;
