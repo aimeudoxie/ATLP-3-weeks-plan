@@ -59,14 +59,14 @@ height: 15px;
     overflow: hidden;
 }
 .container .left-side{
-    flex: 38%;
+    width: 424px;
     background: rgb(255, 253, 253);
     border-top-left-radius : 20px;
     border-bottom-left-radius : 20px;
     
 }
 .container .right-side{
-    flex: 62%;
+    width: 696px;
     background: white;
     border-top-right-radius : 20px;
     border-bottom-right-radius : 20px;
@@ -172,16 +172,15 @@ height: 15px;
     height: 49px;
     border-radius: 15px;
     text-align: center;
-    
-
 }
-.dot button{
-    margin-left: 50px;
-    margin-top: 1px;
+.userimage .dot button{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: -15px;
     border-radius: 100%;
-        height: 10px;
-        width: 10px;
-        border: 1px solid rgba(0, 0, 0, 0.06);
+        height: 12px;
+        width: 12px;
+        border: 1.5px solid white;
         box-sizing: border-box;
         outline: none;
         background: #62C554;
@@ -218,14 +217,14 @@ margin-top: 5px;
     margin-top: 12px;
 }
 .chat-list{
-    position: relative;
     height: 100%;
     overflow-y: auto;
     font-family: helvetica;
+    width: 350px;
 
 }
 .chat-list .block{
-    width: 100%;
+    width: 330px;
     display: flex;
     align-items: center;
     padding: 9.3px 10px;
@@ -373,7 +372,7 @@ margin-top: 5px;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-
+    width: 696px;
     padding: 20px;
 }
 .chatbox .message-security{
@@ -420,7 +419,6 @@ line-height: 20px;
     display:flex;
     width: 90%;
     padding: 6px 7px 3px 9px;
-    margin: 5px 0;
     justify-content: flex-start;
     
 }
@@ -430,13 +428,13 @@ line-height: 20px;
     right: 0; 
     padding: 6px 7px 3px 9px;
     text-align: left;
-    max-width: 65%;
+    max-width: 55%;
     color: #111B21;
     background: white;
     font-family: Helvetica;
-    font-size: 12px;
+    font-size: 13px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 19px;
     border-radius: 5px;
     box-shadow: 0px 1.5px 0.5px 0px rgba(11, 20, 26, 0.13);
@@ -460,26 +458,33 @@ line-height: 20px;
      opacity: 0.5;
      margin-bottom: -8px;
 }
+.frnd_message p img{
+    width: 17px;
+    height: 17px;
+}
+.frnd_message .frame{
+    width: 250px;
+    height: 150px;
+}
 .my_message{
     display:flex;
-    width: 90%;
+    width: 650px;
     padding: 6px 7px 3px 9px;
-    margin: 5px 0px;
     justify-content: flex-end;
 }
 .my_message p{
 display: flex;
 justify-content: space-between; 
+flex-direction: column;
 padding: 6px 7px 3px 9px;
-text-align: right;
-max-width: 50%;
+text-align: left;
+width: 160px;
 color: #111B21;
 background: #dcf8c6;
 font-family: Helvetica;
-font-size: 12px;
+font-size: 13px;
 font-style: normal;
-font-weight: 400;
-line-height: 19px;
+font-weight: 500;
 border-radius: 5px 0px 5px 5px;
 box-shadow: 0px 1.5px 0.5px 0px rgba(11, 20, 26, 0.13);
 }
@@ -494,9 +499,39 @@ box-shadow: 0px 1.5px 0.5px 0px rgba(11, 20, 26, 0.13);
 }
 .my_message p span{
     display: flex;
-    flex-direction: column;
     justify-content:flex-end ;
-     font-size: 8px;
+     font-size: 9px;
      opacity: 0.5;
-     margin-bottom: -8px;
+     margin-bottom: -5px;
+}
+.my_message p span img{
+    width: 15px;
+    height: 12px;
+    justify-content: flex-end;
+
+}
+.messages{
+    display: flex;
+    margin-left: 30px;
+}
+.messages input{
+    width: 550px;
+outline: none;
+border: none;
+background: white;
+height: 45px;
+border-radius: 3px;
+font-size: 14px;
+font-weight: 500;
+padding: 2px 20px;
+}
+.messages img{
+    display: inline-flex;
+    font-size: 1.2em;
+  
+    width: 22px;
+    margin-right: 18px;
+    margin-top: 14px;
+    height: 22px;
+
 }
